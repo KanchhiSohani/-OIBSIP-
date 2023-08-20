@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <h2 id="heading">Welcome to Temperature Convertor</h2>
+    <div class="wholeStructure">
+
+        <div class="container">
+            <div class="section">
+                <div class="input">
+                    <h3 class="heading">Enter Degrees : </h3>
+                    <input type="number" placeholder=0 id="degree">
+                    <select name="inputTemp" id="inputTemp" class="select">
+                        <option value="Celcius">Celcius (&degC)</option>
+                        <option value="Fahrenheit">Fahrenheit (&degF)</option>
+                        <option value="Kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+                <div class="output">
+                    <!-- <label for="outputTemp">Convert to : </label> -->
+                    <h3 class="heading">Convert To:</h3>
+                    <select name="outputTemp" id="outputTemp" class="select">
+                        <option value="Celcius" selected>Celcius (&degC)</option>
+                        <option value="Fahrenheit">Fahrenheit (&degF)</option>
+                        <option value="Kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="resultSection">
+                <div class="result">
+                    <!-- <h3 class="heading">Result : </h3> -->
+                    <input type="text" disabled="disabled" placeholder="Converted Temperature"  name="resultTemp" id="result">
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn">
+            <button onclick="reset()">Clear</button>
+            <button onclick="tempConvert()">Convert   &#8594;</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>

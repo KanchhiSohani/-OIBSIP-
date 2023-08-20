@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+
+html {
+    background-color: #152a3b;
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fbd214;
+}
+
+
+body {
+
+    background-image: url('Images/background-2462436_1920.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+
+
+.container h1 {
+    padding: 20px;
+    /* margin: 0px 10px; */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* ------------navigation------------ */
+
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#cross , #bar{
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #152a3b;
+    border-bottom:2px solid #fbd214;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-left {
+    font-size: 30px;
+}
+
+.nav-right i {
+    padding: 0px 15px;
+    font-size: 20px;
+    transition: transform 0.5s;
+
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-right i:hover{
+    transform: translateY(-10px);
+}
+
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0px 14px;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: white;
+    
+}
+
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* ---------------header------------- */
+
+.header-box{
+    height: 100vh;
+    max-width: fit-content;
+
+
+
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+    background-color: #08042fb5;
+}
+
+.content h1 {
+    color:#fbd214;
+}
+.content p{
+    color:#ffffff;
+}
+
+
+/* ----------------about-------------- */
+
+#about{
+
+    margin: 200px 0px;
+    background-color: #152a3b;
+}
+
+#about h1{
+    padding: 20px;
+    margin: 20px 10px;
+
+}
+
+
+.about-me {
+    font-size: 20px;
+    
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.my-details .heading{
+    font-size: 30px;
+}
+
+.my-details h4,p{
+    font-size: 20px;
+}
+.my-details h3,li{
+    font-size: 20px;
+}
+
+.about-me h2,
+p {
+    padding: 10px 0px;
+}
+
+.my-details {
+    text-align: center;
+
+    padding: 20px;
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 100px;
+}
+
+.my-details ul li {
+    list-style: none;
+    padding: 20px;
+    margin-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s , opacity 0.5s;
+}
+
+.my-details h3 {
+    color: #fbd214;
+}
+
+.my-details h4 {
+    color: white;
+}
+
+.education,
+.skills,
+.experience {
+   
+    border-radius: 20px;
+    width: 300px;
+    margin: 0px 12px;
+    padding-top: 20px;
+
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.skills ul li {
+    padding: 10px;
+
+}
+
+.education:hover  , .skills:hover , .experience:hover{
+    border: 1px solid #fbd214;
+    box-shadow: 0 0 2px #fbd214; 
+    transform: translateY(-10px);
+    background-color: #13151f;
+
+}
+
+.education:hover ul li , .experience:hover ul li , .skills:hover ul li{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+/* ------------projects---------------- */
+
+#work{
+    padding: 20px;
+    margin: 20px 10px;
+
+}
+
+
+.my-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.my-work .points {
+    margin: 20px 20px;
+    /* display: flex;
+    border: 2px solid red;
+    background-color:rgba(0, 0, 0, 0.538) ; */
+}
+
+.my-work .points .para {
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.image {
+    border: 1px solid #fbd214;
+    border-radius: 20px;
+    width: 350px;
+    transition: transform 0.5s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.para a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    /* border: 1px solid white;
+    box-shadow: 0 0 1px white; */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.para a i {
+    font-size: 15px;
+}
+
+
+.para a:hover {
+    color: #fbd214;
+}
+
+
+
+/* --------contact------------ */
+#contact {
+    padding: 20px;
+    margin: 20px 10px;
+
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+
+
+.contact-right input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 2px white;
+    color: aliceblue;
+}
+
+
+
+.btn {
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #13151f;
+}
+
+.contact-left {
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 30%;
+}
+
+
+
+
+
+@media only screen and (max-width : 798px) {
+
+    /* -------------header------------------- */
+
+   
+    body{
+        background: #152a3b;
+
+    }
+
+    #cross, #bar{
+        display: block;
+    }
+
+    .nav-middle ul{
+        display: block;
+        background: #062d48;
+        position: fixed;
+        right: -200px;
+        overflow: hidden;
+        top:0px;
+        height: 100vh;
+        width: 200px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .nav-middle ul li{
+        padding:20px 0;
+        text-align: center;
+    }
+
+    #cross{
+        position: absolute;
+        top: 30px;
+        margin-left: 10px;
+    }
+    
+    #bar{
+        position: absolute;
+        top: 80px;
+        right: 10px;
+    }
+
+    
+
+    .content{
+        color: whitesmoke;
+    }
+
+    .content h1{
+        color: #fbd214;
+    }
+
+    .nav-middle ul li {
+        display: block;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    .image{
+        width: 300px;
+    }
+
+
+}

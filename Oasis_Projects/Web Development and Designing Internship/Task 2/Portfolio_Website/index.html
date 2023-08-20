@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3d1bf74058.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- ---------------navbar------------- -->
+
+    <div id="nav">
+        <div class="container1">
+            <div class="navbar">
+                <div class="nav-left">
+                    <i class="fa-brands fa-korvue logo"></i>
+                </div>
+                <div class="nav-middle">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">My Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id="bar" onclick="openmenu()"></i>
+                </div>
+                <div class="nav-right">
+                    <a href="https://www.linkedin.com/in/kanchhi-sohani-535526243/" target="_blank"><i class="fa-brands fa-linkedin  social-icons"></i></a>
+                    <a href="https://github.com/KanchhiSohani" target="_blank"><i class="fa-brands fa-github  social-icons"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------header------------- -->
+
+    <div id="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="content">
+
+                    <p>Hii , I'm</p>
+                    <h1>Kanchhi Sohani</h1>
+                    <p>A learner in the field of Computer Science Engineering</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------about-------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="about-me">
+                
+                <p>I'm a dedicated and enthusiastic learner in the dynamic field of Computer Science and Engineering. I'm on a perpetual quest to deepen my understanding of the digital world and apply my knowledge to create innovative solutions.I wield the power of Python for its versatility, dive into the complexities of C++, and bring web ideas to life using JavaScript, HTML, and CSS.The rapid pace of technological advancement excites me, and I'm determined to be at the forefront of innovation. By staying up-to-date with industry trends and seeking opportunities to learn from experts, I'm committed to pushing boundaries and exploring uncharted territories.</p>
+            </div>
+
+            <div class="my-details">
+                <div class="education">
+                    <h3 class="heading">Education</h3>
+                    <ul>
+                        <li><h4>Graduation</h4><p>Medicaps-University</p></li>
+                        <li><h4>Senior Secondary</h4><p>Advanced Academy</p></li>
+                        <li><h4>Higher Secondary</h4><p>Advanced Academy</p></li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3 class="heading">Experience</h3>
+                    <ul>
+                        <li>Virtual Intern at Oasis Infobyte</li>
+                    </ul>
+
+                </div>
+
+                <div class="skills">
+                    <h3 class="heading">Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------projects------------- -->
+
+    <div id="work">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="my-work">
+                <div class="points">
+                    <img src="Images/Calc.jpg" class="image">
+                    <div class="para">
+
+                        <p>Developed a calculator using HTML, CSS, and JavaScript to perform various mathematical operations seamlessly.</p>
+                        <br>
+                        <a href="http://127.0.0.1:5500/Calculator%20using%20html%20css%20js/Calculator.html" target="_blank">Check it out <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="points">
+                    <img src="Images/TempC.jpg" class="image">
+                    <div class="para">
+                        <p>Designed a temperature converter using HTML, CSS, and JavaScript, enabling users to effortlessly convert between different temperature units.</p>
+                        <br>
+                        <a href="http://127.0.0.1:5500/Web%20Development%20and%20Designing%20Internship/Task%203/Temperature%20Convertor/index.html" target="_blank">Check it out <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="points">
+                    <img src="Images/Landing.jpg" class="image">
+                    <div class="para">
+
+                        <p>Crafted an engaging landing page using HTML, CSS, and JavaScript that captivates users with its captivating visuals and compelling content.</p>
+                        <br>
+                        <a href="http://127.0.0.1:5500/Web%20Development%20and%20Designing%20Internship/Task%201/Landing_page_website/index.html" target="_blank">Check it out <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------contact--------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <h1>Contact Me Via</h1>
+            <div class="contact-details">
+                <div class="contact-left">
+                    <h3>Email</h3>
+                    <p><i class="fa-solid fa-envelope"></i>kanchhi02ps@gmail.com</p>
+                    <h3>Phone</h3>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="6" placeholder="Your Message" required></textarea>
+
+                        <button class="btn" type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var sidemenu=document.getElementById('sidemenu')
+
+        function openmenu(){
+            sidemenu.style.right="0px";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
